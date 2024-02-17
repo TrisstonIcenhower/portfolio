@@ -1,72 +1,132 @@
 :root {
-    --eerie-black: #161716ff;
-    --smoky-black: #191713ff;
-    --cal-poly-green: #2B4D29ff;
-    --fern-green: #407E3Dff;
-    --pigment-green: #43A53Eff;
-    --feldgrau: #4c5b5cff;
-    --timberwolf: #d3d5d4ff;
-    --dark-purple: #1c0b19ff;
-    --old-rose: #b47978ff;
-    --old-rose-darker: #aa767cff;
+    --ivory: #FFFFF0;
+    --rich-black: #001219ff;
+    --midnight-green: #005f73ff;
+    --dark-cyan: #0a9396ff;
+    --tiffany-blue: #94d2bdff;
+    --vanilla: #e9d8a6ff;
+    --gamboge: #ee9b00ff;
+    --alloy-orange: #ca6702ff;
+    --rust: #bb3e03ff;
+    --rufous: #ae2012ff;
+    --auburn: #9b2226ff;
 }
 
 * {
-    color: var(--pigment-green);
+    font-family: "Rubik", sans-serif;
+    margin: 0;
 }
-
 
 body {
-    background-color: var(--feldgrau);
-    margin: 0 0 0 0;
-}
-
-main {
-    background-color: var(--eerie-black);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 95vh;
-}
-
-header {
-    width: 100%;
-    display: grid;
-    justify-content: start;
-    align-items: center;
-    grid-template-columns: 1fr 3fr;
-}
-
-.portfolio-title {
-    font-size: calc(20px + 0.30625vw);
+    height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+        background-position:left;
+        background-size: cover;
 }
 
 nav {
-    margin-left: auto;
     display: flex;
-    justify-content: center;
-    height: 5vh;
+    gap: 5px;
+}
+
+nav > button {
+    border: 1px solid var(--tiffany-blue);
+    background-color: var(--rich-black);
+    border-radius: 5px;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
 }
 
-.nav-btn {
-    font-size: calc(15px + 0.15vw);
-    height: 100%;
-    width: clamp(20%, 33%, 50%);
-    background-color: var(--feldgrau) ;
-    border-radius: 10px 10px 0 0 ;
-    border: none;
-    border-bottom: 1px solid var(--feldgrau);
-    border-right: 1px solid var(--eerie-black);
-    border-left: 1px solid var(--eerie-black);
+main {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: space-evenly;
+    gap: 5px;
 }
 
-.nav-select {
-    padding: 0;
-    background-color: var(--eerie-black);
-    border-color: var(--eerie-black);
-    border-bottom: none;
-    font-weight: bolder;
+.card{
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: left;
+    gap: 5px;
 }
+
+.card > * {
+    padding: 5px 10px;
+}
+
+.card > h3 {
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px 10px 0 0 ;
+    padding: 0;
+}
+
+.portfolio-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.display-list {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.display-list > li {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*
+TODO: 
+- Add more svgs to transition between for each size
+- Add dynamic sizing
+- background position changes left center right depending on nav
+- Get sizing right so there is no left right up down scroll
+- add links
+*/
+@media (prefers-color-scheme: light) {
+    *{
+        color: var(--rich-black);
+    }
+    body {
+      background-image: url("../img/portfoliobglight16x9.svg");
+    }
+
+    .card{
+        background-color: var(--alloy-orange);
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    *{
+        color: var(--ivory);
+    }
+
+    body {
+        background-image: url("../img/portfoliobgdark16x9.svg");
+    }
+
+    .card{
+        background-color:var(--midnight-green);
+        border: 1px solid var(--dark-cyan);
+    }
+
+    .card > h3 {
+        background-color: var(--rich-black);
+    }
+  }

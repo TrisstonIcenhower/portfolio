@@ -1,5 +1,29 @@
-const homebtn = document.getElementById("homebtn");
+const homeBtn = document.getElementById("homebtn");
+const projBtn = document.getElementById("projectsbtn");
+const contactBtn = document.getElementById("contactBtn");
 
-homebtn.addEventListener("click", () => {
+homeBtn.addEventListener("click", () => {
     console.log("Click home");
 });
+
+projBtn.addEventListener("click", () => {
+    console.log("Click Proj");
+});
+
+contactBtn.addEventListener("click", () => {
+    console.log("Click Contact");
+});
+
+
+//Functions for dynamically showing the content
+function displayHome(){
+
+}
+
+function displayProjects(){
+
+}
+
+function displayAbout(){
+
+}
