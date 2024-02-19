@@ -4,6 +4,20 @@ const contactBtn = document.getElementById("contactBtn");
 const main = document.querySelector("main");
 
 homeBtn.addEventListener("click", () => {
+    displayHome();
+});
+
+projBtn.addEventListener("click", () => {
+    alert("This page is under construction");
+});
+
+contactBtn.addEventListener("click", () => {
+    displayContact();
+});
+
+
+//Functions for dynamically showing the content
+function displayHome(){
     main.innerHTML = `
     <div class="card">
         <h3>Bio</h3>
@@ -40,13 +54,13 @@ homeBtn.addEventListener("click", () => {
         </ul>
       </div>
     `
-});
+}
 
-projBtn.addEventListener("click", () => {
-    alert("This page is under construction");
-});
+function displayProjects(){
 
-contactBtn.addEventListener("click", () => {
+}
+
+function displayContact(){
     main.innerHTML = `<div class="card" id="contact-form">
     <h1>Let's Talk!</h1>
     <h2>Contact me:</h2>
@@ -62,18 +76,4 @@ contactBtn.addEventListener("click", () => {
       <button type="submit">Send</button>
     </form>
   </div>`
-});
-
-
-//Functions for dynamically showing the content
-function displayHome(){
-
-}
-
-function displayProjects(){
-
-}
-
-function displayAbout(){
-
 }
