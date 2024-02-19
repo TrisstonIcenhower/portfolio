@@ -15,6 +15,7 @@
 * {
     font-family: "Rubik", sans-serif;
     margin: 0;
+    color: var(--ivory);
 }
 
 body {
@@ -24,6 +25,7 @@ body {
     background-repeat: no-repeat;
         background-position:left;
         background-size: cover;
+        background-image: url("../img/portfoliobgdark16x9.svg");
 }
 
 nav {
@@ -43,6 +45,10 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 20px;
+    padding: 5px;
+    background-color: var(--rich-black);
+    border-top: 1px solid var(--ivory);
 }
 
 main {
@@ -53,12 +59,25 @@ main {
     gap: 5px;
 }
 
+a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 20px;
+    width: fit-content;
+}
+
 .card{
     display:flex;
     flex-direction: column;
     border-radius: 10px;
     text-align: left;
     gap: 5px;
+    background-color:var(--midnight-green);
+        border: 1px solid var(--dark-cyan);
 }
 
 .card > * {
@@ -71,6 +90,7 @@ main {
     height: 20px;
     border-radius: 10px 10px 0 0 ;
     padding: 0;
+    background-color: var(--rich-black);
 }
 
 .portfolio-title {
@@ -100,33 +120,3 @@ TODO:
 - Get sizing right so there is no left right up down scroll
 - add links
 */
-@media (prefers-color-scheme: light) {
-    *{
-        color: var(--rich-black);
-    }
-    body {
-      background-image: url("../img/portfoliobglight16x9.svg");
-    }
-
-    .card{
-        background-color: var(--alloy-orange);
-    }
-  }
-  @media (prefers-color-scheme: dark) {
-    *{
-        color: var(--ivory);
-    }
-
-    body {
-        background-image: url("../img/portfoliobgdark16x9.svg");
-    }
-
-    .card{
-        background-color:var(--midnight-green);
-        border: 1px solid var(--dark-cyan);
-    }
-
-    .card > h3 {
-        background-color: var(--rich-black);
-    }
-  }

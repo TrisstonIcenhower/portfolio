@@ -3,15 +3,15 @@ const projBtn = document.getElementById("projectsbtn");
 const contactBtn = document.getElementById("contactBtn");
 
 homeBtn.addEventListener("click", () => {
-    console.log("Click home");
+
 });
 
 projBtn.addEventListener("click", () => {
-    console.log("Click Proj");
+    alert("This page is under construction");
 });
 
 contactBtn.addEventListener("click", () => {
-    console.log("Click Contact");
+    alert("This page is under construction");
 });
 
 
