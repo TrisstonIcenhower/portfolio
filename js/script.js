@@ -8,7 +8,7 @@ homeBtn.addEventListener("click", () => {
 });
 
 projBtn.addEventListener("click", () => {
-    alert("This page is under construction");
+    displayProjects();
 });
 
 contactBtn.addEventListener("click", () => {
@@ -57,7 +57,17 @@ function displayHome(){
 }
 
 function displayProjects(){
-
+    main.innerHTML = `
+    <div class="card">
+        <h3>Project 1</h3>
+        <a href="#">Project Link</a>
+        <p>This is a temporary placeholder for projects to go</p>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <a href="#">Project Link</a>
+        <p>This is a temporary placeholder for projects to go</p>
+      </div>`
 }
 
 function displayContact(){
