@@ -19,13 +19,13 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
     background-repeat: no-repeat;
-        background-position:left;
-        background-size: cover;
-        background-image: url("../img/portfoliobgdark16x9.svg");
+    background-position:left;
+    background-size: cover;
+    background-image: url("../img/portfoliobgdark16x9.svg");
 }
 
 nav {

@@ -59,14 +59,14 @@ function displayHome(){
 function displayProjects(){
     main.innerHTML = `
     <div class="card">
-        <h3>Project 1</h3>
-        <a href="#">Project Link</a>
-        <p>This is a temporary placeholder for projects to go</p>
+        <h3>DRIP Investing</h3>
+        <a href="https://github.com/Tice28/dripvsnodripinvesting" target="_blank">Project Link</a>
+        <p>This project serves to create a graphical representation of what would happen if you made monthly contributions to an investment and reinvested the dividends. This is then compared to the value of the investment without reinvested dividends summed up neatly in a matplotlib chart pdf.</p>
       </div>
       <div class="card">
         <h3>Project 2</h3>
         <a href="#">Project Link</a>
-        <p>This is a temporary placeholder for projects to go</p>
+        <p>This is a temporary placeholder for projects to go. Currently here to demonstrate site's logic for handling screen sizes.</p>
       </div>`
 }
 
