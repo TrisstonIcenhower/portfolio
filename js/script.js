@@ -64,9 +64,9 @@ function displayProjects(){
         <p>This project serves to create a graphical representation of what would happen if you made monthly contributions to an investment and reinvested the dividends. This is then compared to the value of the investment without reinvested dividends summed up neatly in a matplotlib chart pdf.</p>
       </div>
       <div class="card">
-        <h3>Project 2</h3>
-        <a href="#">Project Link</a>
-        <p>This is a temporary placeholder for projects to go. Currently here to demonstrate site's logic for handling screen sizes.</p>
+        <h3>Weather App</h3>
+        <a href="https://tice28.github.io/weatherapp/" target="_blank">Project Link</a>
+        <p>This project serves to display a 3 day weather forecast based on data gathered by an API.</p>
       </div>`
 }
 
