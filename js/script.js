@@ -43,7 +43,7 @@ function displayHome(){
         </ul>
       </div>
       <div class="card">
-        <h3>Languages</h3>
+        <h3>Languages and Tools</h3>
         <ul class="display-list">
           <li>Javascript</li>
           <li>HTML</li>
@@ -51,6 +51,7 @@ function displayHome(){
           <li>Python</li>
           <li>C#</li>
           <li>Kotlin</li>
+          <li>Git</li>
         </ul>
       </div>
     `
