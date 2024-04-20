@@ -3,6 +3,8 @@ const projBtn = document.getElementById("projectsbtn");
 const contactBtn = document.getElementById("contactBtn");
 const main = document.querySelector("main");
 
+document.onload = displayHome();
+
 homeBtn.addEventListener("click", () => {
     displayHome();
 });
@@ -52,6 +54,8 @@ function displayHome(){
           <li>C#</li>
           <li>Kotlin</li>
           <li>Git</li>
+          <li>Webpack</li>
+          <li>Bootstrap</li>
         </ul>
       </div>
     `
@@ -68,6 +72,11 @@ function displayProjects(){
         <h3>Weather App</h3>
         <a href="https://tice28.github.io/weatherapp/" target="_blank">Project Link</a>
         <p>This project serves to display a 3 day weather forecast based on data gathered by an API.</p>
+      </div>
+      <div class="card">
+        <h3>Todo App</h3>
+        <a href="https://tice28.github.io/todo-app/" target="_blank">Project Link</a>
+        <p>A CRUD todo application with category creation feature.</p>
       </div>`
 }
 
