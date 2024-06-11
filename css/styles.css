@@ -1,0 +1,59 @@
+html {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul {
+    text-align: start;
+}
+
+main, header, #about, #projects, #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+.card, .sub-card {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card {
+    background-color: lightblue;
+    width: 50%;
+    @media (max-width: 500px){
+        width: 75%;
+    }
+}
+
+.sub-card {
+    background-color: lightgreen;
+}
+
+.card > .job::after {
+    font-size: xx-large;
+    content: "↥";
+}
+
+.card > .job:last-child::after{
+    display: none;
+}
+
+form.card {
+    width: fit-content;
+    padding: 20px;
+    gap: 10px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}

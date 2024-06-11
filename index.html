@@ -18,7 +18,7 @@
     </header>
     <main>
       <div id="about">
-        <h3>About Me</h3>
+        <h2>About Me</h2>
         <div class="card">
           <h3>Personal</h3>
           <p>
@@ -44,7 +44,7 @@
         </div>
         <div class="card">
           <h3>Professional</h3>
-          <div class="sub-card">
+          <div class="sub-card job">
             <h4>GMI Computing</h4>
             <h5>Lead Technician</h5>
             <h6>September 2024 - Present</h6>
@@ -61,7 +61,7 @@
               </li>
             </ul>
           </div>
-          <div class="sub-card">
+          <div class="sub-card job">
             <h4>GMI Computing</h4>
             <h5>IT Generalist Intern</h5>
             <h6>July 2024 - September 2024</h6>
@@ -80,8 +80,54 @@
           </div>
         </div>
       </div>
-      <div id="projects"></div>
-      <div id="contact"></div>
+      <div id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+          <h4>DRIP Investing</h4>
+          <a href="https://github.com/Tice28/dripvsnodripinvesting"
+            >Project Link</a
+          >
+          <p>
+            This project serves to create a graphical representation of what
+            would happen if you made monthly contributions to an investment and
+            reinvested the dividends. This is then compared to the value of the
+            investment without reinvested dividends summed up neatly in a
+            matplotlib chart pdf.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Weather App</h4>
+          <a href="https://tice28.github.io/weatherapp/">Project Link</a>
+          <p>
+            This project serves to display a 3 day weather forecast based on
+            data gathered by an API.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Todo App</h4>
+          <a href="https://tice28.github.io/todo-app/">Project Link</a>
+          <p>A CRUD todo application with category creation feature.</p>
+        </div>
+      </div>
+      <div id="contact">
+        <h2>Contact Me</h2>
+        <form
+          class="card"
+          id="contact-form"
+          action="https://formspree.io/f/xpzvdbgw"
+          method="POST"
+        >
+          <label>
+            Your email:
+            <input type="email" name="email" autocomplete="email" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </main>
     <footer>
       <nav>
