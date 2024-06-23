@@ -113,6 +113,11 @@ p {
 
 .card {
     width: 50%;
+    
+    @media(max-width: 800px){
+        width: 75%;
+    }
+
     padding: 20px;
     border: 1px solid black;
     border-radius: 10px;
