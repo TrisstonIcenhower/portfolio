@@ -1,326 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A developer portfolio showcasing Trisston Icenhower's personal and professional information."
-    />
-    <title>Trisston Icenhower</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Trisston Icenhower</title>
   </head>
   <body>
-    <div class="menu">
-      <img
-        loading="lazy"
-        src="./img/trisston_headshot.webp"
-        alt="Trisston's Headshot"
-        id="headshot"
-      />
+    <header>
+      <h1>Trisston Icenhower</h1>
+      <div class="emoji-img">👨‍💻</div>
       <nav>
-        <a href="#about"
-          ><img
-            loading="lazy"
-            src="./img/person-svgrepo-com.svg"
-            alt="About SVG"
-            class="svg-img"
-          />
-          About Me</a
-        >
-        <a href="#projects"
-          ><img
-            loading="lazy"
-            src="./img/computer-code-svgrepo-com.svg"
-            alt="Projects SVG"
-            class="svg-img"
-          />
-          Projects</a
-        >
-        <a href="#contact"
-          ><img
-            loading="lazy"
-            src="./img/mail-svgrepo-com.svg"
-            alt="Contact SVG"
-            class="svg-img"
-          />
-          Contact</a
-        >
+        <a href="#about">About</a><a href="#projects">Projects</a
+        ><a href="#education">Education</a>
       </nav>
-      <div class="social-links">
-        <a href="https://github.com/Tice28" target="_blank"
-          ><img loading="lazy" src="./img/GitHub_Logo_White.webp" alt="Github"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/trisston-icenhower-46a532238/"
-          target="_blank"
-          ><img loading="lazy" src="./img/linkedin.svg" alt="LinkedIn"
-        /></a>
-      </div>
-    </div>
-    <main>
-      <section class="intro-section">
-        <h1 id="about">
-          Hi, I'm Trisston Icenhower
-          <div class="wave">👋</div>
-        </h1>
+    </header>
+    <div id="content">
+      <section id="about">
+        <h2>About</h2>
         <p>
-          I am a software developer from Arkansas who is looking to work in
-          software development, particulary in web or mobile development.
-        </p>
-        <h2>Short Bio</h2>
-        <p>
-          I am from Arkansas born and raised, and I love living in the natural
-          state. I have a beautiful wife and son. I enjoy programming, gaming,
-          hiking, and spending time with family and friends.
-        </p>
-        <h3>How did I get into programming?</h3>
-        <p>
-          During high school, I had no idea what I wanted to do with my life. I
-          thought I would follow my dad and go into engineering or follow my mom
-          and enter the medical field. However, all that changed my senior year
-          of high school when my school got it's first programming course
-          offered.
-        </p>
-        <p>
-          I signed up and was instantly hooked. It was just an introductory
-          python course, but it sparked my interest in computers and the many
-          ways you can manipulate and instruct them to perform instructions you
-          want them to do.
-        </p>
-        <p>
-          From there, I went to college for computer science and I graduated
-          cum-laude in May of 2024, and that leads me to where I am today.
+          Aspiring Software Developer with a robust foundation in full-stack
+          development and a passion for creating software products for people to
+          actually use. Experience in several programming languages with
+          hands-on experience in building practical applications.
         </p>
       </section>
-      <section class="about-section">
-        <h2>
-          Education
-          <img
-            loading="lazy"
-            src="./img/graduate-svgrepo-com.svg"
-            alt="Grad SVG"
-            class="svg-img"
-          />
-        </h2>
-        <div class="card">
-          <h3>Henderson State University</h3>
-          <h4>BS Computer Science - <i>Cum Laude</i></h4>
-        </div>
-        <h2>Programming Languages, Frameworks, and Tools</h2>
-        <section class="skills">
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>
+          Listed below are just a few projects from my portfolio. To see the
+          rest, please visit my github
+          <a href="https://github.com/Tice28">here</a>.
+        </p>
+        <div class="project-container">
           <div class="card">
-            <h3>Javascript</h3>
-            <img
-              loading="lazy"
-              src="./img/javascript-svgrepo-com.svg"
-              alt="JS img"
-              class="svg-skill-img"
-            />
-          </div>
-          <div class="card">
-            <h3>HTML</h3>
-            <img
-              loading="lazy"
-              src="./img/html5-svgrepo-com.svg"
-              alt="HTML img"
-              class="svg-skill-img"
-            />
-          </div>
-          <div class="card">
-            <h3>CSS</h3>
-            <img
-              loading="lazy"
-              src="./img/css-3-svgrepo-com.svg"
-              alt="CSS img"
-              class="svg-skill-img"
-            />
-          </div>
-          <div class="card">
-            <h3>MongoDB</h3>
-            <img
-              loading="lazy"
-              src="./img/mongodb-svgrepo-com.svg"
-              alt="Mongo img"
-              class="svg-skill-img"
-            />
-          </div>
-          <div class="card">
-            <h3>React</h3>
-            <img
-              loading="lazy"
-              src="./img/react-svgrepo-com.svg"
-              alt="React img"
-              class="svg-skill-img"
-            />
-          </div>
-          <div class="card">
-            <h3>Python</h3>
-            <img
-              loading="lazy"
-              src="./img/python-svgrepo-com.svg"
-              alt="Python img"
-              class="svg-skill-img"
-            />
-          </div>
-          <div class="card">
-            <h3>Java</h3>
-            <img
-              loading="lazy"
-              src="./img/java-svgrepo-com.svg"
-              alt="Java img"
-              class="svg-skill-img"
-            />
-          </div>
-          <div class="card">
-            <h3>Git</h3>
-            <img
-              loading="lazy"
-              src="./img/git-svgrepo-com.svg"
-              alt="Git img"
-              class="svg-skill-img"
-            />
-          </div>
-          <div class="card">
-            <h3>BootStrap</h3>
-            <img
-              loading="lazy"
-              src="./img/bootstrap.svg"
-              alt="BootStrap img"
-              class="svg-skill-img"
-              style="background-color: #6f42c1; border-radius: 10px"
-            />
-          </div>
-        </section>
-      </section>
-      <section class="project-section">
-        <h1 id="projects">Projects</h1>
-        <div class="card">
-          <h2>
-            Drip Investment
-            <img
-              loading="lazy"
-              src="./img/diagram-bar-uptrend-svgrepo-com.svg"
-              alt="Chart SVG"
-              class="svg-img"
-            />
-          </h2>
-          <h3>
-            <a
-              href="https://github.com/Tice28/dripvsnodripinvesting"
-              target="_blank"
-              >Link</a
-            >
-          </h3>
-          <p>
-            This project serves to show the user potential gains of reinvesting
-            their dividends vs not reinvesting. This is done by using a python
-            library to gather realtime data about a stock ticker of the user's
-            choice, and it prints out a pdf file with graph showing returns.
-          </p>
-        </div>
-        <div class="card">
-          <h2>
-            Bitmap Image Grayscale Converter
-            <img
-              loading="lazy"
-              src="./img/image-svgrepo-com.svg"
-              alt="Image SVG"
-              class="svg-img"
-            />
-          </h2>
-          <h3>
             <a
               href="https://github.com/Tice28/C_Grayscale_Converter"
               target="_blank"
-              >Link</a
+              rel="noopener noreferrer"
+              >Grayscale Image Converter</a
             >
-          </h3>
-          <p>
-            This project uses the C programming language to convert .bmp images
-            to grayscale by manipulating the image's info using data gathered
-            from the file header. Once converted it will output the grayscale
-            image in the same directory.
-          </p>
-        </div>
-        <div class="card">
-          <h2>
-            Todo App
-            <img
-              loading="lazy"
-              src="./img/checklist-svgrepo-com.svg"
-              alt="Todo SVG"
-              class="svg-img"
-            />
-          </h2>
-          <h3>
-            <a href="https://github.com/Tice28/todo-app" target="_blank"
-              >Link</a
+          </div>
+          <div class="card">
+            <a
+              href="https://github.com/Tice28/todo-app"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Todo App</a
             >
-          </h3>
-          <h3>
-            <a href="https://tice28.github.io/todo-app/" target="_blank"
-              >Live Preview</a
+          </div>
+          <div class="card">
+            <a
+              href="https://github.com/Tice28/dripvsnodripinvesting"
+              target="_blank"
+              rel="noopener noreferrer"
+              >DRIP Investing Calculator</a
             >
-          </h3>
-          <p>
-            This is a todo app with the ability to create custom categories that
-            allow the user to visualize what area of their life the task belongs
-            to. It utilizes local storage to store the tasks.
-          </p>
-        </div>
-        <div class="card">
-          <h2>
-            Weather App
-            <img
-              loading="lazy"
-              src="./img/clouds-sun-1276-svgrepo-com.svg"
-              alt="Weather SVG"
-              class="svg-img"
-            />
-          </h2>
-          <h3>
-            <a href="https://github.com/Tice28/weatherapp" target="_blank"
-              >Link</a
+          </div>
+          <div class="card">
+            <a
+              href="https://github.com/Tice28/weatherapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Weather App</a
             >
-          </h3>
-          <h3>
-            <a href="https://tice28.github.io/weatherapp/" target="_blank"
-              >Live Preview</a
+          </div>
+          <div class="card card-highlight">
+            <a
+              href="https://github.com/Tice28/FullStack-WebApps"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Independent Fullstack Projects</a
             >
-          </h3>
-          <p>
-            This weather app takes data from a weather API using async/await to
-            display to the user a 3-day weather forecast of their area. It also
-            includes a F/C switch to change between the methods of measuring
-            temperature.
-          </p>
+          </div>
         </div>
       </section>
-      <section class="contact-section">
-        <h1 id="contact">Let's Get in Touch!</h1>
-        <form action="https://formspree.io/f/xpzvdbgw" method="POST">
-          <label>
-            Your email:
-            <input type="email" name="email" autocomplete="email" />
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
+      <div id="education">
+        <h2>Education</h2>
+        <div class="card">
+          <p>Henderson State University</p>
+          <ul>
+            <li><i>Cum Laude</i></li>
+            <li>B.S. Computer Science</li>
+            <li>Minor in Mathematics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
