@@ -1,91 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trisston Icenhower</title>
-  </head>
-  <body>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
     <header>
-      <h1>Trisston Icenhower</h1>
-      <div class="emoji-img">👨‍💻</div>
-      <nav>
-        <a href="#about">About</a><a href="#projects">Projects</a
-        ><a href="#education">Education</a>
-      </nav>
+        <nav>
+            <li>
+                <a href="#career">Career</a>
+            </li>
+			<li>
+				<a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li><a href="#contact">Contact</a>
+            </li>
+        </nav>
     </header>
-    <div id="content">
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          Aspiring Software Developer with a robust foundation in full-stack
-          development and a passion for creating software products for people to
-          actually use. Experience in several programming languages with
-          hands-on experience in building practical applications.
-        </p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>
-          Listed below are just a few projects from my portfolio. To see the
-          rest, please visit my github
-          <a href="https://github.com/Tice28">here</a>.
-        </p>
-        <div class="project-container">
-          <div class="card">
-            <a
-              href="https://github.com/Tice28/C_Grayscale_Converter"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Grayscale Image Converter</a
-            >
-          </div>
-          <div class="card">
-            <a
-              href="https://github.com/Tice28/todo-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Todo App</a
-            >
-          </div>
-          <div class="card">
-            <a
-              href="https://github.com/Tice28/dripvsnodripinvesting"
-              target="_blank"
-              rel="noopener noreferrer"
-              >DRIP Investing Calculator</a
-            >
-          </div>
-          <div class="card">
-            <a
-              href="https://github.com/Tice28/weatherapp"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Weather App</a
-            >
-          </div>
-          <div class="card card-highlight">
-            <a
-              href="https://github.com/Tice28/FullStack-WebApps"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Independent Fullstack Projects</a
-            >
-          </div>
-        </div>
-      </section>
-      <div id="education">
-        <h2>Education</h2>
-        <div class="card">
-          <p>Henderson State University</p>
-          <ul>
-            <li><i>Cum Laude</i></li>
-            <li>B.S. Computer Science</li>
-            <li>Minor in Mathematics</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </body>
+	<div id="wrapper">
+    <main>
+        <section class="hero-container">
+            <span id="intro">Hi, I'm</span>
+            <span id="name">Trisston Icenhower</span>
+            <span id="position">Crypto Site Lead | Programmer</span>
+        </section>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.linkedin.com/in/trisstonicenhower/" class="fa fa-linkedin icon" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://github.com/TrisstonIcenhower" class="fa fa-github icon" target="_blank"></a>
+            </li>
+        </ul>
+    </main>
+	<article id="career">
+		<h1>Career</h1>
+		<section>
+			<h2>👨🏻‍💼Crypto Lead Technician</h2>
+			<h3>GMI Computing Oklahoma LLC</h3>
+			<h4>September 2023-Present</h4>
+		</section>
+		<section>
+			<h2>👨🏻‍🔧Crypto IT Generalist</h2>
+			<h3>GMI Computing Oklahoma LLC</h3>
+			<h4>July 2023-September 2023</h4>
+		</section>
+	</article>
+	<article id="education">
+		<h1>Education</h1>
+		<section>
+			<h2>B.S. Computer Science</h2>
+			<h3>Henderson State University</h3>
+			<h4><i>Cum Laude</i></h4>
+		</section>
+	</article>
+	<article id="projects">
+		<h1>Projects</h1>
+		<div class="card-container">
+			<section>
+				<h2>Colorblind Simulator</h2>
+				<div class="tag-holder">
+					<div class="tag">HTML</div>
+					<div class="tag">CSS</div>
+					<div class="tag">Javascript</div>
+				</div>
+				<p>Uses realtime video streams from the user's device to simulate colorblindness.</p>
+				<a href="https://trisstonicenhower.github.io/colorblindness_simulator/" target="_blank" class="project-link">Link</a>
+			</section>
+			<section>
+				<h2>Grayscale Image Converter</h2>
+				<div class="tag-holder">
+					<div class="tag">C Language</div>
+				</div>
+				<p>A command line interface written in C to convert bitmap images into their grayscale counterparts.</p>
+				<a href="https://github.com/TrisstonIcenhower/C_Grayscale_Converter" target="_blank" class="project-link">Link</a>
+			</section>
+			<section>
+				<h2>Todo App</h2>
+				<div class="tag-holder">
+					<div class="tag">HTML</div>
+					<div class="tag">CSS</div>
+					<div class="tag">Javascript</div>
+				</div>
+				<p>A simple todo list application with a customizable categories option. Used as practice developing CRUD applications.</p>
+				<a href="https://trisstonicenhower.github.io/todo-app/" target="_blank" class="project-link">Link</a>
+			</section>
+			<section>
+				<h2>Habit Tracker</h2>
+				<div class="tag-holder">
+					<div class="tag">MongoDB</div>
+					<div class="tag">Express.js</div>
+					<div class="tag">React.js</div>
+					<div class="tag">Node.js</div>
+				</div>
+				<p>A habit tracker built with the MERN stack demonstrating full stack application development.</p>
+				<a href="https://github.com/TrisstonIcenhower/FullStack-WebApps/tree/habittracker" target="_blank" class="project-link">Link</a>
+			</section>
+		</div>
+	</article>
+	<article id="contact">
+		<h1>Contact</h1>
+		<p>To contact me, please email me at <a href="mailto:trisstonprogramming@gmail.com">trisstonprogramming@gmail.com</a>.</p>
+	</article>
+		<div class="background">
+			<div class="cube circle"></div>
+			<div class="cube circle"></div>
+			<div class="cube circle"></div>
+			<div class="cube circle"></div>
+			<div class="cube circle"></div>
+		</div>
+	</div>
+    <footer>
+        <ul class="footer-social-links">
+            <li>
+                <a href="https://www.linkedin.com/in/trisstonicenhower" class="fa fa-linkedin icon" target="_blank"></a>
+            </li>
+            <li>
+                <a href="https://github.com/TrisstonIcenhower" class="fa fa-github icon" target="_blank"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
 </html>

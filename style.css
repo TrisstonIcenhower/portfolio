@@ -1,0 +1,361 @@
+/*
+    TODO: Bitcoin falling background
+    1. Career page
+        - Line career thing going down
+    2. Projects page
+    3. Contact page
+*/
+
+:root {
+    --title-large: 8.5vw;
+    --title-medium: 4.5vw;
+    --title-small: 2.5vw;
+	--title-smaller: 2vw;
+	--title-smallest: 1.3vw;
+	--subtitle-normal: .9vw;
+    --header-link: 2vw;
+	--text-normal: .9vw;
+	--text-color: #E9E3E6;
+	--alt-color: #2A282A;
+}
+
+* {
+	font-family: "Oswald";
+	color: var(--text-color);
+  text-shadow:
+    1px 1px 0 var(--alt-color),
+    -1px 1px 0  var(--alt-color),
+    -1px -1px 0  var(--alt-color),
+    1px -1px 0  var(--alt-color);
+    margin: 0;
+    padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+            z-index: 2;
+}
+#background-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.background {
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+  z-index: -100;
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #D7D4E4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.cube:nth-child(2n) {
+  border-color: #FFF ;
+}
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+header,
+main,
+section,
+article,
+nav,
+.tag-holder,
+.social-links,
+.footer-social-links,
+.card-container,
+.card-container > section {
+    display: flex;
+}
+
+main,
+nav,
+.social-links,
+.footer-social-links {
+    align-items: center;
+}
+
+section, article,
+.social-links {
+    flex-direction: column;
+}
+
+article {
+	margin-top: 10rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+
+.card-container {
+	
+	@media only scren and (min-width: 601px){
+		flex-direction: row;
+	}
+	@media only screen and (max-width: 600px){
+		flex-direction: column;
+	}
+}
+
+.card-container > section{
+	justify-content: center;
+	align-items: center;
+	
+	@media only screen and (max-width: 600px){
+		margin-bottom: 1rem;
+	}
+}
+
+.card-container > section > p {
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 50%;
+}
+
+.card-container > section > h2 {
+	height: 50%;
+	text-align: center;
+}
+
+.card-container > section > a {
+	margin-top: auto;
+}
+
+.card-container > section > .tag-holder {
+	height: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article:before, article:after {
+	content: "";
+	width: 100%;
+	border: 1px solid var(--text-color);
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+header {
+	position: sticky;
+	top: 0;
+    height: 5vh;
+    justify-content: right;
+	z-index: 1;
+    @media only screen and (max-width: 600px) {
+        justify-content: center;
+    }
+	bkit-backdrop-filter: blur(20px);      
+	backdrop-filter: blur(20px);
+}
+
+h1 {
+	padding-top: 2rem;
+	margin-bottom: 2.5rem;
+}
+
+main {
+    height: 95vh;
+}
+
+nav {
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 5rem;
+}
+
+nav>li>a {
+    font-size: var(--header-link);
+}
+
+nav>li>a:hover {
+    text-decoration: underline;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+p > a, h2 > a {
+	text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+.hero-container {
+    @media only screen and (min-width: 601px) {
+        width: 90vw;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.social-links {
+    @media only screen and (min-width: 601px) {
+        width: 10vw;
+        font-size: 50px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+footer {
+    @media only screen and (min-width: 601px) {
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin-top: auto;
+        width: 100%;
+        font-size: 10px;
+    }
+}
+
+.footer-social-links {
+    justify-content: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+
+.project-link {
+	padding: .1rem;
+	border: 1px solid var(--alt-color);
+	background-color: var(--alt-color);
+	width: 2rem;
+	text-align: center;
+}
+
+.tag {
+	text-align: center;
+	padding: 4px;
+	border: 1px solid var(--alt-color);
+	background-color: var(--alt-color);
+	border-radius: 1rem;
+}
+
+#career > section:not(:last-child)::after {
+	content: '';
+	min-height: 10rem;
+	width: 1px;
+	background-color: var(--text-color);
+	@media only screen and (max-width: 600px){
+		margin-left: 50%;
+		margin-right: 50%;
+	}
+}
+
+/* Come back and make custom font sizes*/
+
+#intro {
+    font-size: var(--title-medium);
+}
+
+#name {
+    font-size: var(--title-large);
+}
+
+#position, article > h1 {
+    font-size: var(--title-small);
+}
+
+section > h2 {
+	font-size: var(--title-smaller);
+}
+
+section > h3 {
+	font-size: var(--title-smallest);
+}
+
+section > h4 {
+	font-size: var(--subtitle-normal);
+}
+
+p, a, .tag {
+	font-size: var(--text-normal);
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
