@@ -308,34 +308,74 @@ footer {
 	}
 }
 
+#contact {
+	
+}
+
 /* Come back and make custom font sizes*/
 
 #intro {
     font-size: var(--title-medium);
+	
+	@media only screen and (max-width: 600px){
+		font-size: calc(4* var(--title-medium));
+	}
 }
 
 #name {
     font-size: var(--title-large);
+	
+	@media only screen and (max-width: 600px){
+		font-size: calc(3* var(--title-large));
+	}
 }
 
 #position, article > h1 {
     font-size: var(--title-small);
+	
+	@media only screen and (max-width: 600px){
+		font-size: calc(3* var(--title-small));
+	}
 }
 
 section > h2 {
 	font-size: var(--title-smaller);
+	
+	@media only screen and (max-width: 600px){
+		font-size: calc(4* var(--title-smaller));
+	}
 }
 
 section > h3 {
 	font-size: var(--title-smallest);
+	
+	@media only screen and (max-width: 600px){
+		font-size: calc(4* var(--title-smallest));
+	}
 }
 
 section > h4 {
 	font-size: var(--subtitle-normal);
+	
+	@media only screen and (max-width: 600px){
+		font-size: calc(4* var(--subtitle-normal));
+	}
 }
 
 p, a, .tag {
 	font-size: var(--text-normal);
+	
+	@media only screen and (max-width: 600px){
+		font-size: calc(4* var(--text-normal));
+	}
+}
+
+nav > li > a {
+	font-size: var(--text-normal);
+	
+	@media only screen and (max-width: 600px){
+		font-size: calc(3* var(--text-normal));
+	}
 }
 
 @keyframes Gradient {
