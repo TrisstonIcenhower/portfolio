@@ -17,6 +17,7 @@
 	--text-normal: .9vw;
 	--text-color: #E9E3E6;
 	--alt-color: #2A282A;
+	--footer-icon: 3rem;
 }
 
 * {
@@ -46,7 +47,7 @@ body {
 }
 
 .background {
-  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background: linear-gradient(132deg, #1488CC,#2B32B2,#536976,#9796f0);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: absolute;
@@ -274,6 +275,10 @@ footer {
     justify-content: center;
 }
 
+.footer-social-links {
+	font-size: var(--footer-icon);
+}
+
 .fa {
     padding: 20px;
     font-size: inherit;
@@ -307,12 +312,6 @@ footer {
 		margin-right: 50%;
 	}
 }
-
-#contact {
-	
-}
-
-/* Come back and make custom font sizes*/
 
 #intro {
     font-size: var(--title-medium);
@@ -371,7 +370,7 @@ p, a, .tag {
 }
 
 nav > li > a {
-	font-size: var(--text-normal);
+	font-size: calc(2 * var(--text-normal));
 	
 	@media only screen and (max-width: 600px){
 		font-size: calc(3* var(--text-normal));
